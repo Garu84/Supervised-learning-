@@ -1,23 +1,20 @@
 # Supervised-learning
-# Dataset Sintético - Deserción Estudiantil
+# Synthetic Dataset - Student Dropout
 
-Este dataset lo creé para la Actividad I de Data Mining de la Universidad de la Costa.
+I created this dataset for Data Mining Activity I at the Universidad de la Costa.
 
-**Tamaño:** 500 estudiantes
+**Size:** 500 students
 
-## Variables incluidas
-- **Demográficas:** age, gender, place_of_origin
-- **Académicas:** high_school_avg, admission_test_score, first_semester_grades
-- **Financieras:** socioeconomic_level, has_scholarship, has_loan
-- **Variable objetivo:** dropout (Yes = desertó / No = no desertó)
+## Included Variables
+- **Demographic:** age, gender, place_of_origin
+- **Academic:** high_school_avg, admission_test_score, first_semester_grades
+- **Financial:** socioeconomic_level, has_scholarship, has_loan
+- **Target variable:** dropout (Yes = dropped out / No = did not drop out)
 
-## Cómo creé los datos
-- Usé números aleatorios simples con `numpy.random`
-- Agregué **valores nulos** (null values) en algunas columnas (aprox. 70 nulos en total)
-- Agregué **outliers** manualmente (edades raras, notas imposibles, estrato 0, etc.)
-- La columna "dropout" depende un poco de las notas del primer semestre (más probabilidades de desertar si la nota es baja)
+## How I created the data
+- I used simple random numbers with `numpy.random`
+- I added **null values** to some columns (approx. 70 nulls in total)
+- I manually added **outliers** (unusual ages, impossible grades, socioeconomic level 0, etc.)
+- The “dropout” column depends somewhat on first-semester grades (higher probability of dropping out if the grade is low)
 
-Este dataset simula información real de estudiantes y cumple con todos los requisitos de la actividad.
-
-**Creado por:** [Tu nombre aquí]  
-**Fecha:** Marzo 2026
+This dataset simulates real student data and meets all the requirements of the activity.
